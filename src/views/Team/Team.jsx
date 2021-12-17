@@ -5,7 +5,7 @@ import TeamDetail from '../../components/TeamDetail/TeamDetail';
 export default function Team() {
   return (
     <>
-      <h3>I am a team view.</h3>
+      <h3>Team</h3>
       <TeamDetail />
     </>
   );

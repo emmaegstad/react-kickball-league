@@ -2,13 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './TeamList.css';
 
-export default function TeamList() {
+export default function TeamList({ name }) {
   return (
     <>
-      <h3>I am a team list.</h3>
-      <Link to="/Team">Team</Link>
-      <Link to="/Team">Team</Link>
-      <Link to="/Team">Team</Link>
+      <Link to="/Team">{name}</Link>
     </>
   );
 }
