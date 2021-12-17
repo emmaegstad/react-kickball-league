@@ -1,0 +1,15 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+.team h3 {
+  margin: 4vh 0 0 0;
+}
+
+.team p {
+  margin: 0;
+}
