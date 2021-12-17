@@ -5,7 +5,7 @@ import './TeamDetail.css';
 export default function TeamDetail(props) {
   return (
     <>
-      <h3>{props.team.name}</h3>
+      <h1>{props.team.name}</h1>
       <p>
         {props.team.city}, {props.team.state}
       </p>
