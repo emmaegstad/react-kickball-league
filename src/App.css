@@ -14,3 +14,7 @@ header {
   display: flex;
   justify-content: space-around;
 }
+
+.loader {
+  text-align: center;
+}

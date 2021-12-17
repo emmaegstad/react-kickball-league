@@ -5,14 +5,18 @@ import { fetchPlayers } from '../../services/players';
 
 export default function Players() {
   const [players, setPlayers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchPlayers();
       setPlayers(data);
+      setLoading(false);
     };
     fetchData();
   }, []);
+
+  if (loading) return <h3 className="loader">loading...</h3>;
 
   return (
     <div className="players">
