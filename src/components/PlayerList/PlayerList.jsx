@@ -2,10 +2,12 @@ import React from 'react';
 import './PlayerList.css';
 import { Link } from 'react-router-dom';
 
-export default function PlayerList({ name }) {
+export default function PlayerList({ name, id }) {
   return (
     <>
-      <Link to="/Player">{name}</Link>
+      <Link key={id} to={`/players/${id}`}>
+        {name}
+      </Link>
     </>
   );
 }

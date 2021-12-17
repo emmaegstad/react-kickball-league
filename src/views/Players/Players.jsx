@@ -15,11 +15,11 @@ export default function Players() {
   }, []);
 
   return (
-    <>
+    <div className="players">
       <h1>Players</h1>
       {players.map((player) => {
         return <PlayerList key={player.id} {...player} />;
       })}
-    </>
+    </div>
   );
 }

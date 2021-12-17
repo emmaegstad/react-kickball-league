@@ -10,17 +10,17 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <header className="App-header">
+        <header className="header">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/Teams">Teams</NavLink>
           <NavLink to="/Players">Players</NavLink>
         </header>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/Teams" component={Teams} />
-          <Route exact path="/Team" component={Team} />
-          <Route exact path="/Players" component={Players} />
-          <Route exact path="/Player" component={Player} />
+          <Route exact path="/teams" component={Teams} />
+          <Route exact path="/teams/:id" component={Team} />
+          <Route exact path="/players" component={Players} />
+          <Route exact path="/players/:id" component={Player} />
         </Switch>
       </BrowserRouter>
     </div>
